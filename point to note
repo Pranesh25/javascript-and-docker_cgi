@@ -1,0 +1,6 @@
+setenforce 0
+getenforce
+vim /etc/sudoers --> in this go to the line where all  root is written and the add the below line
+apache ALL=(ALL)       NOPASSWD : ALL
+then go to the 
+vim /etc/group  ----> find docker and add apache at the last of the line
